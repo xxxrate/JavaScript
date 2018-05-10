@@ -17,6 +17,7 @@ function rgb2hex(sRGB){
 			//判断是否超过色标
 			if(temp < 256 && temp >= 0){
 				//若小于16添0在前
+				//Math.abs(str[i]).toString(16) 等于 temp.toString(16) 前者string和number都适用 后者只能用于number
 				final += temp < 16 ? '0' + temp.toString(16) : temp.toString(16);
 			}else{
 				return sRGB;
