@@ -1,0 +1,20 @@
+//---------------lib.js-----------
+
+export let counter = 3;
+export function iCounter(){
+    counter++;
+}
+
+//---------------main.js-----------
+
+import {counter , iCounter} form '.lib';
+
+//import的counter,iCounter此时都是有效的
+console.log(counter); //3
+iCounter();
+console.log(counter); //4
+
+//import的counter不能被修改
+counter++; //typeerror
+
+总结:export定义的变量，可作为局部变量在模块内被使用，当被import时，变量只会随着模块内的方法而变化。
