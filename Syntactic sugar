@@ -1,6 +1,6 @@
 /---------A simple example---------/
 for(int i = 0;i < 5;i++) { }    =>   int i = 5; while(i < 5){ }
 
-/---------usage of ts---------/
+/---------usage of es6---------/
 箭头函数：function a(a = 6) {return a*a;} => let fn = (a=6)=>a*a;
 Promise对象：三种状态，Pending（等待），resolve（成功），reject（失败），异步操作解决方案，比原有的回调函数更方便
