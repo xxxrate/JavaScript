@@ -1,2 +1,2 @@
 # JavaScript
-JavaScript , ES5 , ES6.
+JavaScript , TypeScript , ES5 , ES6.
